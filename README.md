@@ -1,8 +1,8 @@
 ### RUN THE PROJECT
 cd into backend
-`nest start`
+`npm && nest start`  
 cd into frontend
-`npm start`
+`npm i && npm start`
 
 test user:
 ```
