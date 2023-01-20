@@ -1,3 +1,15 @@
+### RUN THE PROJECT
+cd into backend
+`nest start`
+cd into frontend
+`npm start`
+
+test user:
+```
+user: test
+pass: 123
+```
+
 # ✨Wiredelta Fullstack Sample Tasks ✨
 ## Project : Pokemon Manager API
 
