@@ -1,6 +1,6 @@
 ### RUN THE PROJECT
 cd into backend
-`npm && nest start`  
+`npm i && nest start`  
 cd into frontend
 `npm i && npm start`
 
