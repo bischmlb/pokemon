@@ -1,0 +1,47 @@
+.delete-title-container {
+    margin-bottom: 5px;
+    padding:40px;
+    .delete-title {
+        p {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+.modal-delete-content {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    span { text-align: left; font-weight: 600; font-size: 12px; font-family: 'Poppins'; margin-right: 210px; margin-bottom: 10px;}
+}
+
+.app-button-delete {
+    border: 1px solid red;
+    background-color: inherit;
+    font-family: 'Poppins';
+    border-radius: 8px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: 0.2s;
+    color: red;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.2);
+
+    &:hover { 
+        cursor: pointer;
+        background-color: red;
+        color: #fff;
+        font-size: 14px;
+    }
+
+
+}

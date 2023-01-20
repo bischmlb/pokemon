@@ -1,0 +1,11 @@
+.login-title-container {
+    display: flex;
+    flex-direction: column;
+
+    .login-title {
+        margin-top: 10px;
+        span {
+            font-weight: 600;
+        }
+    }
+}

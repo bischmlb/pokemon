@@ -1,0 +1,152 @@
+
+$borderRadius: 16px;
+$boxShadow: 0px 1px 10px 1px rgba(0,0,0,0.2);
+
+.pokecard-container {
+    box-shadow: $boxShadow;
+    border-radius: $borderRadius;
+    min-width: 200px;
+    max-height: 470px;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 0; 
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    .pokecard {
+        &-image{
+            width: 100%;
+            min-width: 200px;
+            min-height: 157px;
+            flex: 1.5;
+            border-radius: $borderRadius;
+            justify-items: center;
+            background-color: #1677ff;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        &-name{
+            flex: 1;
+            
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            
+        }
+
+        
+
+        &-body{
+            flex: 2;
+
+            &-row{
+                display: flex;
+                margin: 10px 0;
+                font-size: 11px;
+
+                &-item {
+                    flex: 1;
+                    font-weight: 700;
+                    text-align: start;
+
+                }
+    
+                &-value {
+                    flex: 1;
+                    text-align: right;
+
+                    &-ability {
+                        padding: 4px 0;
+                    }
+                }
+
+            }
+        }
+
+        &-footer {
+            display: flex;
+            border-top: 1px solid rgba(0,0,0,0.02);
+            justify-self: flex-end;
+            align-items: center;
+            overflow: hidden;
+            margin: 0px -20px;
+            margin-top: 40px;
+            height: 50px;
+
+
+            button {
+                border: 0;
+                font-weight: 600;
+                width: 100%;
+                height: 100%;
+                font-family: 'Poppins';
+                font-size: 12px;
+
+
+            }
+
+            .defaultButton {
+                flex: 1;
+                width: 100px;
+                height: 100px;
+                background-color: inherit;
+            }
+
+            &-detailsbtn {
+                @extend .defaultButton;
+                z-index: 2;
+                box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.025);
+                border-bottom-left-radius: $borderRadius;
+                white-space: nowrap;
+
+                p{
+                    color: #1677ff;
+                    border-bottom: 2px solid transparent;
+                    transition: 0.2s;
+                    margin: 0 20px;
+                }
+
+                &:hover {
+                    p{
+                        font-size: 13px;
+                        border-bottom: 2px solid #1677ff
+                    }
+                    cursor: pointer
+                }
+
+
+                button {
+                    @extend button;
+                    color: #1677ff;
+                }
+            }
+
+            &-deletebtn {
+                @extend .defaultButton;
+                flex: 1;
+                border-bottom-right-radius: $borderRadius;
+
+                &-loggedout{
+                    @extend .pokecard-footer-deletebtn;
+                    color: #999;
+                }
+
+                &-loggedin{
+                    @extend .pokecard-footer-deletebtn;
+                    color: red;
+
+                    &:hover {
+                        cursor: pointer
+                    }
+                }
+            }
+        }
+    }
+}

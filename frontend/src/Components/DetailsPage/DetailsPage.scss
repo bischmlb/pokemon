@@ -1,0 +1,118 @@
+.details-container {
+    margin-top: 40px;
+    display: flex;
+
+    &-left {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+
+        button { 
+            margin-left: 100px; 
+        }
+    }
+            
+    &-center {
+        margin-top: 60px;
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+
+        .details-collapsible {
+            margin: 40px;
+            margin-top: 10px;
+            button {
+                color: inherit;
+                width: 100%;
+                box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1);
+                border-radius: 10px;
+                display: flex;
+                margin: 10px;
+                border: 0;
+                background-color: #fff;
+                font-family: 'Poppins';
+
+                .title-container {
+                    text-align: left;
+                    flex: 1;
+                    padding: 10px 20px;
+                    font-size: 14;
+                }
+
+            &:hover { cursor: pointer;}
+            }
+
+            &-content {
+                display: flex;
+                margin: 10px;
+                margin-top: -5px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1);
+                width: 100%;
+
+
+                div {
+                    text-align: left;
+                    margin: 10px 40px;
+                    flex: 1;
+                    font-size: 14px;
+
+
+                }
+
+            }
+        }
+
+    }       
+    &-right {
+        flex: 1;
+
+        span {
+            font-size: 12px;
+        }
+
+        .action-button {
+            padding: 20px 10px;
+            border: 0 !important;
+            color: #1677ff;
+            background-color: inherit;
+            font-family: 'Poppins';
+            font-size: 14px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+    }
+    .details {
+
+        &-img {
+                align-self: center;
+                flex: 1;
+                width: fit-content;
+                border-radius: 16px;
+                background-color: #1677ff;
+        }
+
+        &-name{
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            
+        }
+        &-stats{
+            display: flex;
+            
+            p {
+                flex: 1;
+                font-size: 12px;
+            }
+            
+        }
+    }
+
+}

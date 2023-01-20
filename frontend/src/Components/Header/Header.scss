@@ -1,0 +1,74 @@
+$boxShadow: 0px 1px 10px 1px rgba(0,0,0,0.2);
+
+
+.header-container {
+    display: flex;
+    min-height: 75px;
+    box-shadow: 4px 0 6px rgba(0,0,0,0.2);
+    align-items: center;
+
+    &-left {
+        flex: 1;
+        justify-content: left;
+    }
+
+    &-center {
+        flex: 3;
+        justify-content: center;
+        display: flex;
+
+        .inputBox {
+            font-size: 12px;
+            box-shadow:  0px 1px 10px 1px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            min-width: 200px;
+            display: flex;
+            margin: 0 20px;
+        }
+
+        .input {
+            font-family: 'Poppins' !important;
+            border: 0 !important;
+            color: #000 !important;
+            width: 350px;
+            @extend .inputBox;
+        }
+
+        .dropdown{
+            color: #999;
+            @extend .inputBox;
+
+            .right {
+                flex: 1;
+                text-align: right;
+            }
+
+            .left {
+                text-align: left;
+            }
+
+            .faIcon {
+                transition: 0.25s;
+            }
+            
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+.app-button:hover{
+    background-color: #1677ff;
+    color: white;
+    font-size: 14px;
+
+}

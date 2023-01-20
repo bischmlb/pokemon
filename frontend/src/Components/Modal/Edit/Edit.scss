@@ -1,0 +1,15 @@
+.create-edit-container {
+    margin-bottom: 5px;
+    .edit-title {
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.modal-edit-content {
+    padding: 50px;
+    padding-bottom: 10px;
+
+    span { text-align: left; font-weight: 600; font-size: 12px; font-family: 'Poppins'; margin-right: 210px; margin-bottom: 10px;}
+}
